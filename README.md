@@ -1,0 +1,2 @@
+# FireAlarmSystemSoftware
+ 基于Python和PyQt5开发的防火报警系统软件
