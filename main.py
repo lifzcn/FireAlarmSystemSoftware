@@ -35,9 +35,9 @@ class mainWindow(QMainWindow, Ui_Form):
         self.pushButton_Close.clicked.connect(self.comClose)
         self.pushButton_Refresh.clicked.connect(self.comRefresh)
         self.com.readyRead.connect(self.receiveData)
-        self.pushButton_TemperatureAdjustConfirm.clicked.connect(self.setTemperatureLimitValue)
-        self.pushButton_HumidityAdjustConfirm.clicked.connect(self.setHumidityLimitValue)
-        self.pushButton_SmokeAdjustConfirm.clicked.connect(self.setSmokeLimitValue)
+        self.pushButton_SetTemperatureLimitValue.clicked.connect(self.setTemperatureLimitValue)
+        self.pushButton_SetHumidityLimitValue.clicked.connect(self.setHumidityLimitValue)
+        self.pushButton_SetSmokeLimitValue.clicked.connect(self.setSmokeLimitValue)
 
     def showTime(self):
         self.label_DateAndTime.setText(time.strftime("%B %d,%H:%M:%S", time.localtime()))
@@ -93,7 +93,6 @@ class mainWindow(QMainWindow, Ui_Form):
         if self.radioButton_TemperatureAdjustHigh.isChecked():
             self.radioButton_TemperatureAdjustLow.setEnabled(False)
             setTemperatureHighValue = self.horizontalSlider_TemperatureAdjust.value()
-            print(setTemperatureHighValue)
             self.lineEdit_TemperatureAdjustDisplay.setText(setTemperatureHighValue)
         if self.radioButton_TemperatureAdjustLow.isChecked():
             self.radioButton_TemperatureAdjustHigh.setEnabled(False)
@@ -105,6 +104,10 @@ class mainWindow(QMainWindow, Ui_Form):
             self.radioButton_HumidityAdjustLow.setEnabled(False)
             setHumidityHighValue = self.horizontalSlider_HumidityAdjust.value()
             self.lineEdit_HumidityAdjustDisplay.setText(setHumidityHighValue)
+        if self.radioButton_TemperatureAdjustLow.isChecked():
+            self.radioButton_HumidityAdjustHigh.setEnabled(False)
+            setHumidityLowValue = self.horizontalSlider_HumidityAdjust.value()
+            self.lineEdit_HumidityAdjustDisplay.setText(setHumidityLowValue)
 
     def setSmokeLimitValue(self):
         pass
