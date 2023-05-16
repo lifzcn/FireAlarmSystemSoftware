@@ -63,11 +63,14 @@
    <widget class="QSlider" name="horizontalSlider_TemperatureAdjust">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>60</y>
-      <width>101</width>
+      <width>121</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -76,14 +79,14 @@
    <widget class="QLineEdit" name="lineEdit_TemperatureAdjustDisplay">
     <property name="geometry">
      <rect>
-      <x>241</x>
-      <y>61</y>
+      <x>240</x>
+      <y>60</y>
       <width>49</width>
       <height>26</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -105,38 +108,12 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>18</x>
-      <y>60</y>
-      <width>111</width>
-      <height>57</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_6">
-     <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton_TemperatureAdjustHigh">
-       <property name="text">
-        <string>温度上限</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_TemperatureAdjustLow">
-       <property name="text">
-        <string>温度下限</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
+      <x>24</x>
       <y>90</y>
-      <width>151</width>
+      <width>261</width>
       <height>31</height>
      </rect>
     </property>
@@ -156,6 +133,19 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_TemperatureThresholdValue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>温度阈值</string>
+    </property>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_HumidityInfo">
@@ -178,11 +168,14 @@
    <widget class="QSlider" name="horizontalSlider_HumidityAdjust">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>60</y>
-      <width>101</width>
+      <width>121</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -191,14 +184,14 @@
    <widget class="QLineEdit" name="lineEdit_HumidityAdjustDisplay">
     <property name="geometry">
      <rect>
-      <x>241</x>
-      <y>61</y>
+      <x>240</x>
+      <y>60</y>
       <width>49</width>
       <height>26</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -220,38 +213,12 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
-      <width>111</width>
-      <height>57</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_7">
-     <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton_HumidityAdjustHigh">
-       <property name="text">
-        <string>湿度上限</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_HumidityAdjustLow">
-       <property name="text">
-        <string>湿度下限</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
       <y>90</y>
-      <width>151</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -271,6 +238,19 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_HumidityThresholdValue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>湿度阈值</string>
+    </property>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_SmokeInfo">
@@ -293,11 +273,14 @@
    <widget class="QSlider" name="horizontalSlider_SmokeAdjust">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>60</y>
-      <width>101</width>
+      <width>121</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -307,13 +290,13 @@
     <property name="geometry">
      <rect>
       <x>241</x>
-      <y>61</y>
+      <y>60</y>
       <width>49</width>
       <height>26</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -335,38 +318,12 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
-      <width>111</width>
-      <height>57</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_8">
-     <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton_SmokeAdjustHigh">
-       <property name="text">
-        <string>浓度上限</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_SmokeAdjustLow">
-       <property name="text">
-        <string>浓度下限</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
       <y>90</y>
-      <width>151</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -387,6 +344,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_SmokeThresholdValue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浓度阈值</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_CameraDisplay">
    <property name="geometry">
@@ -405,13 +375,13 @@
    <property name="title">
     <string>实时图像</string>
    </property>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="label_videoCapture">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>190</y>
-      <width>72</width>
-      <height>15</height>
+      <x>10</x>
+      <y>30</y>
+      <width>611</width>
+      <height>351</height>
      </rect>
     </property>
     <property name="text">
@@ -462,7 +432,7 @@
      <string>Date And Time</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -488,32 +458,6 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>189</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_10">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_CurrentFireStatement">
-       <property name="text">
-        <string>火灾状态：</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_FireStatement">
-       <property name="text">
-        <string>火灾状态</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_ComInfo">
    <property name="geometry">
@@ -532,7 +476,7 @@
    <property name="title">
     <string>串口设置</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -575,13 +519,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>210</x>
       <y>20</y>
-      <width>81</width>
-      <height>91</height>
+      <width>95</width>
+      <height>103</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
