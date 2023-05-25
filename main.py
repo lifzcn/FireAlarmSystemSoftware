@@ -94,6 +94,7 @@ class mainWindow(QMainWindow, Ui_Form):
             rxDataList = rxData.split(',')
             self.lineEdit_TemperatureValue.setText(rxDataList[0] + " ℃")
             self.lineEdit_HumidityValue.setText(rxDataList[1] + " %")
+            self.lineEdit_SmokeValue.setText(rxDataList[2] + "ppm")
         except Exception as e:
             QMessageBox.critical(self, "严重错误", "串口接收数据错误!\n" + str(e), None, None)
 
